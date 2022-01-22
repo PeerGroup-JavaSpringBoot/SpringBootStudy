@@ -33,7 +33,7 @@
 - **Commit convention rule** : [대주제] 소주제 분류(이론정리/구현/...) _ex) [DataStructure] Stack 자료정리_
 - **Branch naming convention** : 대주제/닉네임 _ex) DataStructure/Nickname_
 
-### Collaborator
+### Peers
 
 <p>
 <a href="https://github.com/KimKwon">

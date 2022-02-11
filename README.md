@@ -19,9 +19,9 @@
 - **Branch naming convention** : 
    - => `peer/성명` 
    - (ex) `peer/김동윤`
- <br> <br>
+ <br> 
 
-- **Pull Request rule** : 
+- **Pull Request rule** : <br>
    - `Pull Request` 제목 : `[peer/성명] : 수행한 내용`
       - (ex) `[peer/성명] 첫번째 미션 수행` or `[peer/성명] Chapter1 내용 정리`<br>
    - `Pull Request` 내용 : `[peer/성명] : 수행한 내용`

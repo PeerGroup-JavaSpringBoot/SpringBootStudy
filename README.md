@@ -31,7 +31,7 @@
 - **Commit convention rule** : [peer/성명] n번째 미션 수행 / Chapter1 내용 정리 _ex) [peer/성명] 첫번째 미션 수행 or [peer/성명] Chapter1 내용 정리
 - **Branch naming convention** : peer/성명 _ex) peer/김동윤
 
-### Collaborator
+### Spring Boot Study Collaborator
 
 <p>
 <a href="https://github.com/myway00">

@@ -28,8 +28,12 @@
 
 > [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)
 
-- **Commit convention rule** : [peer/성명] n번째 미션 수행 / Chapter1 내용 정리 _ex) [peer/성명] 첫번째 미션 수행 or [peer/성명] Chapter1 내용 정리
-- **Branch naming convention** : peer/성명 _ex) peer/김동윤
+- **Commit convention rule** : 
+- [peer/성명] n번째 미션 수행 / Chapter1 내용 정리 
+   - ex) [peer/성명] 첫번째 미션 수행 or [peer/성명] Chapter1 내용 정리
+ <br>
+- **Branch naming convention** : 
+   - peer/성명 _ex) peer/김동윤
 
 ### Spring Boot Study Collaborator
 

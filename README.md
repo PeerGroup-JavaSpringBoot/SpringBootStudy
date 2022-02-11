@@ -10,13 +10,13 @@
 
 > [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)
 
-- **Commit convention rule** : 
+- **Commit convention rule** : <br>
    - => `[peer/성명] n번째 미션 수행 / Chapter1 내용 정리 `
    - (ex) `[peer/성명] 첫번째 미션 수행` or `[peer/성명] Chapter1 내용 정리`
    
  <br>
  
-- **Branch naming convention** : 
+- **Branch naming convention** : <br>
    - => `peer/성명` 
    - (ex) `peer/김동윤`
  <br> 

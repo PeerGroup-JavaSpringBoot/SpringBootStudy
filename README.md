@@ -22,8 +22,9 @@
  <br> 
 
 - **Pull Request rule** : <br>
+    <br>
    - `Pull Request` 제목 : `[peer/성명] : 수행한 내용`
-      - (ex) `[peer/성명] 첫번째 미션 수행` or `[peer/성명] Chapter1 내용 정리`<br><br><br>
+      - (ex) `[peer/성명] 첫번째 미션 수행` or `[peer/성명] Chapter1 내용 정리`<br><br>
    - `Pull Request` 내용 : `[peer/성명] : 수행한 내용`
       - ![image](https://user-images.githubusercontent.com/76711238/153603767-44a0b735-dd9f-4398-ba7c-b94a9a793196.png)<br>
       - 위의 이미지에서 템플릿 복붙해서 작성해주시면 됩니다!

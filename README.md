@@ -1,14 +1,18 @@
 # Spring Boot Study
 ### `Spring Boot Fighter`
 > Since 2022.02.11
-
+  - [Repository Rule](#repository-rule)
+  - [Collaborator](#collaborator)
+  - [Reference](#reference)
+  
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
 </p>
 
-### Spring Boot Study Collaborator
+### Collaborator
 
-<p>
+<p align="center">
+  
 <a href="https://github.com/myway00">
   <img src="https://github.com/myway00.png" width="100">
 </a>
@@ -34,9 +38,11 @@
 </a>
   
 </p>
-### Repository Rule
 
-> [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)
+### Repository-Rule
+
+> 1) [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)<br>
+> 2) [미션 올리는 방법](https://www.notion.so/Mission-63c14f867c6a4a5583f143a9472255f7)
 
 - **Commit convention rule** : <br>
    - => `peer/성명 : n번째 미션 수행 / Chapter1 내용 정리 `
@@ -63,10 +69,7 @@
 
 ## Table of Contents
 
-- [Chapter 1. Basics](#Chapter 1. Basics)
-  - [Repository Rule](#repository-rule)
-  - [Collaborator](#collaborator)
-  - [Reference](#reference)
+- [Chapter 1. Basics]
 - [Chapter 2. Spring Boot Basics (1)]
 - [Chapter 3. Spring Boot Basics (2)]
 - [Chapter 4. CRUD & Data (1)]

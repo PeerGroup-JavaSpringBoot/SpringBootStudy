@@ -4,13 +4,13 @@
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
   - [Reference](#reference)
-  - 
+  
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
 </p>
 
-### Spring Boot Study Collaborator
-<p style="hidden"># collaborator</p>
+### Collaborator
+# study collaborator
 <p>
 <a href="https://github.com/myway00">
   <img src="https://github.com/myway00.png" width="100">

@@ -41,7 +41,7 @@
 
 ### Repository-Rule
 
-> [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)
+> [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)<br>
 > [미션 올리는 방법](https://www.notion.so/Mission-63c14f867c6a4a5583f143a9472255f7)
 
 - **Commit convention rule** : <br>

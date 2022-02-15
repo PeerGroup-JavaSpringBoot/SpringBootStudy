@@ -10,8 +10,8 @@
 </p>
 
 ### Collaborator
-# study collaborator
-<p>
+### ✨study collaborators✨
+<p align="center">
 <a href="https://github.com/myway00">
   <img src="https://github.com/myway00.png" width="100">
 </a>

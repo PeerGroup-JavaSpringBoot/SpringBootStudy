@@ -1,13 +1,16 @@
 # Spring Boot Study
 ### `Spring Boot Fighter`
 > Since 2022.02.11
-
+  - [Repository Rule](#repository-rule)
+  - [Collaborator](#collaborator)
+  - [Reference](#reference)
+  - 
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
 </p>
 
 ### Spring Boot Study Collaborator
-
+<p style="hidden"># collaborator</p>
 <p>
 <a href="https://github.com/myway00">
   <img src="https://github.com/myway00.png" width="100">
@@ -34,7 +37,8 @@
 </a>
   
 </p>
-### Repository Rule
+
+### Repository-Rule
 
 > [Github 가이드](https://www.notion.so/Github-Study-2bac0600e75d477e828e96ab319f0247)
 
@@ -63,10 +67,7 @@
 
 ## Table of Contents
 
-- [Chapter 1. Basics](#Chapter 1. Basics)
-  - [Repository Rule](#repository-rule)
-  - [Collaborator](#collaborator)
-  - [Reference](#reference)
+- [Chapter 1. Basics]
 - [Chapter 2. Spring Boot Basics (1)]
 - [Chapter 3. Spring Boot Basics (2)]
 - [Chapter 4. CRUD & Data (1)]

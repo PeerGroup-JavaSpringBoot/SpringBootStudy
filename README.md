@@ -12,7 +12,7 @@
 ### Collaborator
 
 <p align="center">
-  ✨study collaborators✨
+  
 <a href="https://github.com/myway00">
   <img src="https://github.com/myway00.png" width="100">
 </a>

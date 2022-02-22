@@ -3,7 +3,8 @@
 ## psot 생성 시 이것이 속할 board_id 지정
 
 - id 0 , id 1 생성 시 board id 와 password 지정
-- 
+
+
 ![image](https://user-images.githubusercontent.com/76711238/155147853-2c023afa-a42f-428e-b811-e4b6ad52e362.png)
 
 ![image](https://user-images.githubusercontent.com/76711238/155148307-a81391ae-652e-4661-b53b-0d8006982a7a.png)
@@ -11,6 +12,20 @@
 ![image](https://user-images.githubusercontent.com/76711238/155148171-e62f30b0-66d7-49e8-bb39-8422932eb841.png)
 
 ## post 불러올 때 post가 속한 board_id와 url의 board_id가 같지 않으면 에러
+
+(1) 특정 id의 POST 불러올 때 `RestController` 코드 (boardid/postid) 형태로 url 받아오기
+
+![image](https://user-images.githubusercontent.com/76711238/155157269-3495664d-c0bf-40eb-a676-6f49669219a0.png)
+
+(2) `PostService` 코드  (여기서 로직 검사- 이 post의 board 아이디가 맞는지..)
+
+![image](https://user-images.githubusercontent.com/76711238/155157642-3af8cd27-45af-43e4-b095-1e2dc4f895f2.png)
+
+(3) `PostDto` 코드
+
+![image](https://user-images.githubusercontent.com/76711238/155157838-b025736a-2229-4577-8e73-06b47b4d7add.png)
+
+______________________________________
 
 ![image](https://user-images.githubusercontent.com/76711238/155148443-dd976e9e-c88e-40d6-b4c5-1319d097cc5a.png)
 
@@ -21,6 +36,16 @@ _________________________________________________________________
 <br><br><br>
 
 # 2. 비번 테스트
+
+(1) `RestController`
+
+![image](https://user-images.githubusercontent.com/76711238/155167174-082639b1-c0c3-4baf-87a4-4c9680be8719.png)
+
+(2) `PostService`
+
+![image](https://user-images.githubusercontent.com/76711238/155168129-21370d38-b566-4d0f-a12d-8e6df71cabbe.png)
+
+
 
 ## 현 상황 (get - all)
 

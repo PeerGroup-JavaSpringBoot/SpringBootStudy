@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b214e58b-7e0d-4eda-a8d8-8b0d99137c7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter4/이진.md" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter4/이진.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter1/조용은.md" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter1/조용은.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,88 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b214e58b-7e0d-4eda-a8d8-8b0d99137c7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/BasicBoardApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/controller/BoardRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/controller/PostRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/domain/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/domain/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/dto/BoardDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/dto/PostDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/repository/BoardRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/repository/BoardRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/repository/PostRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/repository/PostRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/service/BoardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/service/BoardServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/service/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/service/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/java/dev/yoon/basic_board/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Basic/basic_Board/src/test/java/dev/yoon/basic_board/BasicBoardApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/result.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/BasicBoardApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/controller/BoardRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/controller/PostRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/controller/ShopController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/controller/ShopPostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/controller/ShopReviewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Area.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/Shop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/ShopPost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/ShopReview.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/BoardDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/PostDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/shop/ShopDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/shop/ShopPostDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/dto/shop/ShopReviewDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/AreaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/BoardRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/BoardRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/PostRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/PostRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/ShopPostRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/ShopRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/ShopReviewRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/BoardService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/BoardServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/ShopPostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/ShopReviewService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/ShopService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/java/dev/yoon/basic_board/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/Challenge/challenge_Board/src/test/java/dev/yoon/basic_board/BasicBoardApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission3/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="b214e58b-7e0d-4eda-a8d8-8b0d99137c7f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +35,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644917185457</updated>
       <workItem from="1644917190592" duration="4182000" />
-      <workItem from="1646652223275" duration="1133000" />
+      <workItem from="1646652223275" duration="1294000" />
     </task>
     <servers />
   </component>

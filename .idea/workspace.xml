@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b214e58b-7e0d-4eda-a8d8-8b0d99137c7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter6/윤영진.md" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter6/윤영진.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644917185457</updated>
       <workItem from="1644917190592" duration="4182000" />
-      <workItem from="1646652223275" duration="471000" />
+      <workItem from="1646652223275" duration="831000" />
     </task>
     <servers />
   </component>

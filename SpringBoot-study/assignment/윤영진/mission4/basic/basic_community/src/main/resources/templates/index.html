@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--보안설정을 위해 sec-->
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Home</title>
+</head>
+<body>
+    <!-- 로그인이 안된 경우에 login form으로 보이는 부분-->
+    <div sec:authorize="isAnonymous()">
+        <h2>Hello World!</h2>
+        <button onclick="location.href = '/user/login'">로그인</button>
+        <button onclick="location.href = '/user/signup'">회원가입</button>
+    </div>
+    <!--사용자의 로그인 여부에 따라서 바뀌는 부분-->
+    <div sec:authorize="isAuthenticated()">
+        <h3 >
+            반갑습니다. <span sec:authentication="name"></span>님!
+        </h3>
+        <form th:action="@{/user/logout}" method="post">
+            <input type="submit" th:value="로그아웃">
+        </form>
+    </div>
+
+
+</body>
+</html>

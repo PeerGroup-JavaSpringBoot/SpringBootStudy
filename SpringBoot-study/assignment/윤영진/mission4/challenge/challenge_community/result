@@ -1,0 +1,24 @@
+user에서 area의 외래 키를 가진 상황
+
+usercreate하는데 insert문 2번(user, area)를 예상
+
+근데 결과가 insert문 2번(user, area)에 update문(user)
+
+why?
+
+> save를 해야지 id값이 생성되어 객체에 맵핑
+
+그리고 save를 한다고 바로 DB에 반영되는 것이 아닌 1차 캐시에 쌓아놓고 Transactional이 끝난 경우 한번에 flush
+
+flush 전에 DB에 넣을 객체를 확인하고 변경 내용이 있을 경우 자동 update 쿼리(=변경감지)
+
+area Save를 user Save보다 나중에 할 경우
+
+먼저 실행된 user Save를 통해 id값이 맵핑된 user가 1차 캐시에 올라감 => user의 area에는 id값 매핑x(=null)
+
+후에 area Save를 통해 id값이 맵핑된 area가 1차 캐시에 올라가면서 기존의 1차 캐시에 존재하던 user의 area에도 id값을 매핑 => user 변경
+
+따라서 마지막에 기존의 user에는 area의 id값이 null이였다가 id값이 생겨서 변경감지가 일어나므로 update쿼리가 날라감
+
+
+

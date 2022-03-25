@@ -1,0 +1,3 @@
+redirect 쿠키 문제
+- response에 쿠키를 add할 경우 redirect하는 주소를 안적어줄 경우 쿠키가 사라짐
+- 꼭 addPath를 하자

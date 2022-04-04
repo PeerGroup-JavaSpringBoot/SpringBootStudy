@@ -1,0 +1,24 @@
+localhost:9080/home 
+-> :/index : 로그인된 상태면 유저 이름 출력, 아닌 경우 Hello Please ~ 출력
+
+-> 로그인 버튼 클릭시
+
+-> http://localhost:10000/request-login?request_from=http://127.0.0.1:9080/home 요청이 들어온 정보를 가지고 sso서버로 전달
+
+-> request-login 주소는 sequrity가 허용한 주소가 아니므로 막힘
+
+-> 막힌 뒤 로그인 페이지로 넘어감 (시큐리티 설정 )
+
+-> 로그인 성공하면 sso서버의 customSuccessHandler에서 쿠키를 생성 후 응답에 넣음
+
+-> extends SavedRequestAwareAuthenticationSuccessHandler의 super에 의해서 막혔던 url(http://localhost:10000/request-login?request_from=http://127.0.0.1:9080/home)로 redirect 후
+
+-> 처음에 클라이언트 서버에서 가져온 request_from을 이용, 쿼리 파람에 cookie정보를 넣어서 클라이언트 서버로 redirect
+
+-> 클라이언트 서버에서 처음에 CookieFilter를 통해 쿠키를 확인
+-> 두번째 SsoAuthFilter를 통해 Cookie 재확인, 만약에 쿠키가 없는 경우 쿼리파람을 통해 한번 더 확인
+-> 쿼리파람 마저도 없는 경우 미승인 유저로 처리
+-> 두 곳중 한 곳에라도 쿠키 정보가 있는 경우 로그인 처리 -> setSsoAuthentication
+
+
+

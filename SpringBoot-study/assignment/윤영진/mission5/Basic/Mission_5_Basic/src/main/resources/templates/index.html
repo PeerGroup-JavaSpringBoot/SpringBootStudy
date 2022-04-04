@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.w3.org/1999/xhtml"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Home</title>
+</head>
+<body>
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    async function showPosition(position) {
+        let response = await fetch(
+            `http://localhost:8080/area/get-location-info?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}`
+        )
+        await response.json().then(e => console.log(e));
+    }
+
+</script>
+
+<input type="button" value="getLocation" onclick="getLocation()"/>
+
+</body>
+</html>

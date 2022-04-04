@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Login</title>
+</head>
+<body>
+<form th:action="@{/user/signup}" method="post">
+    <input type="text" name="username" placeholder="아이디"><br>
+    <input type="password" name="password" placeholder="비밀번호"><br>
+    <input type="password" name="password_check" placeholder="비밀번호 확인"><br>
+    is shop owner: <input type="checkbox" name="is_shop_owner"><br>
+    <button type="submit">회원가입</button>
+</form>
+</body>
+</html>

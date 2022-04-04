@@ -1,0 +1,11 @@
+에러처리 ? 
+
+-> @RestControllerAdvice, @ControllerAdvice 어노테이션이 붙은 클래스로 다 모임
+
+->  @ExceptionHandler(value = {MethodArgumentNotValidException.class})를 통해서 해당 예외를 캐치함
+
+-> 네트워크에서 404, 500, ... 예외 시 json형태로 예외를 돌려주는 경우가 많이보임
+
+-> enum 클래스인 ErrorCode 클래스에 해당 예외에 대한 초기화 작업을 해둠
+
+-> enum 클래스인 ErrorCode 클래스를 통해 ResponseDto에 데이터를 할당하고 return

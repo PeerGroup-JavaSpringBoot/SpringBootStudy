@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.w3.org/1999/xhtml"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Home</title>
+</head>
+<body>
+<div sec:authorize="isAnonymous()">
+    <h2>Hello! Please, sign in!</h2>
+    <button onclick="location.href = '/user/login'">로그인</button>
+    <button onclick="location.href = '/user/signup'">회원가입</button>
+</div>
+<div sec:authorize="isAuthenticated()">
+    <h3>
+        Welcome back, <span sec:authentication="name"></span>!
+    </h3>
+    <form th:action="@{/user/logout}" method="post">
+        <input type="submit" th:value="로그아웃">
+    </form>
+</div>
+
+
+    <div>
+
+        <h2>현재 위치를 확인해보자</h2>
+        <a href="#"> <p onclick="getLocation()">내 위치 확인하기 </p> </a>
+
+        <form action="/area" method="get">
+            <a href="#"> <p onclick="getLocation2()"> 현재 위도, 경도 입력 </p> </a>
+            <div id="valueInput1">
+            <input type="text" name="lat" placeholder="위도" >
+            </div>
+            <div id="valueInput2">
+            <input type="text" name="lon" placeholder="경도">
+            </div>
+            <input type = "submit" value = "전송">
+        </form>
+
+    </div>
+<div>
+    <h1>여기~~~~~~~</h1>
+<p class="msg" th:text="${msg}"></p>
+</div>
+</body>
+</html>
+<script>
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+function showPosition(position) {
+    alert(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`);
+}
+
+function getLocation2() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition2);
+        }
+}
+function showPosition2(position) {
+    console.log(position);
+
+     var lat = String(position.coords.latitude);
+     var lon = String(position.coords.longitude);
+     document.getElementById('valueInput1').innerHTML = lat;
+     document.getElementById('valueInput2').innerHTML= lon;
+}
+
+
+</script>

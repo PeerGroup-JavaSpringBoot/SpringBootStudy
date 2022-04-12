@@ -82,6 +82,8 @@
 - [Chapter 8. Spring Security]
 - [Chapter 9. Spring과 Middlewares]
 
+<br><br>
+
 ## 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
 <p align="center">
    <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />

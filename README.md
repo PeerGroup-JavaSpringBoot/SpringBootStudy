@@ -1,6 +1,7 @@
 # Spring Boot Study
 ### `Spring Boot Fighter`
 > Since 2022.02.11
+  - [스터디 기록, 운영방식 노션](#https://www.notion.so/Peer-Group-2-4f767d2bb511429db7b2bb4fd8c94055)
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
   - [Reference](#reference)
@@ -69,6 +70,7 @@
 
 ## Table of Contents
 
+1) The Origin : 스프링부트 강의 (2/11 ~ 4/5)
 - [Chapter 1. Basics]
 - [Chapter 2. Spring Boot Basics (1)]
 - [Chapter 3. Spring Boot Basics (2)]
@@ -79,7 +81,7 @@
 - [Chapter 8. Spring Security]
 - [Chapter 9. Spring과 Middlewares]
 
-
+2) 
 
 
 ### Reference

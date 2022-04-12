@@ -69,9 +69,9 @@
 
  <br> <br>
 
-## Table of Contents
+# Table of Contents
 
-1) The Origin : 스프링부트 강의 (2/11 ~ 4/5)
+## 1) The Origin : 스프링부트 강의 (2/11 ~ 4/5) ☑
 - [Chapter 1. Basics]
 - [Chapter 2. Spring Boot Basics (1)]
 - [Chapter 3. Spring Boot Basics (2)]
@@ -82,7 +82,7 @@
 - [Chapter 8. Spring Security]
 - [Chapter 9. Spring과 Middlewares]
 
-2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
+## 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
 <p align="center">
    <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />
 </p>

@@ -2,7 +2,7 @@
 ### `Spring Boot Fighter`
 > Since 2022.02.11
 
-  - <a href="https://www.notion.so/Peer-Group-2-4f767d2bb511429db7b2bb4fd8c94055">
+  - <a href="https://www.notion.so/Peer-Group-2-4f767d2bb511429db7b2bb4fd8c94055">[Spring Boot Fighter 스터디 기록 노션]</a>
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
   - [Reference](#reference)

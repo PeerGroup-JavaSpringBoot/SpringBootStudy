@@ -84,7 +84,7 @@
 
 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
 <p align="center">
-![image](https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png)
+   <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />
 </p>
 
 - [1장 개발 환경 구축]

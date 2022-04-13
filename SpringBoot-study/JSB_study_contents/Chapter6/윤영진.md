@@ -1,0 +1,195 @@
+# Chapter6 강의 정리
+
+### 설정 파일 작성
+- Spring.config.activate.on-profile 사용
+
+```
+spring:
+  config:
+    activate:
+      on-profile: local
+```
+
+#### 하나의 yml파일에 여러 개의 설정 파일
+```
+# 현재 profile이 test일 경우 실행하는 문서
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/demo_jpa_schema
+    username: demo_jpa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    properties:
+      hibernata:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+---
+# 현재 profile이 test일 경우 실행하는 문서
+spring:
+  profiles:
+    active: test
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+  jpa:
+#    hibernate : 테이블을 만들고 활용하는 framework
+    hibernate:
+#      ddl-auto : 테이블을 생성하고 제거하는 과정을 자동으로하는 옵션
+#      => 프로그램 실행시 테이블을 자동으로 생성했다가 프로그램 종료시 자동으로 제거
+      ddl-auto: create
+#      테이블에 데이터를 남기기 위해서
+#      ddl-auto: update
+#      ddl-auto: none
+#      실제로 불리는 sql문을 보여줄지 선택하는 옵션
+    show-sql: true
+    properties:
+      hibernata:
+        dialect: org.hibernate.dialect.H2Dialect
+```
+#### 여러 개의 yml 파일
+> `application.yml`
+```
+spring:
+  profiles:
+    active: test
+```
+> `application-local.yml`
+```
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/demo_jpa_schema
+    username: demo_jpa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    properties:
+      hibernata:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+```
+> `application-test.yml`
+```
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: sa
+    password:
+  jpa:
+#    hibernate : 테이블을 만들고 활용하는 framework
+    hibernate:
+#      ddl-auto : 테이블을 생성하고 제거하는 과정을 자동으로하는 옵션
+#      => 프로그램 실행시 테이블을 자동으로 생성했다가 프로그램 종료시 자동으로 제거
+      ddl-auto: create
+#      테이블에 데이터를 남기기 위해서
+#      ddl-auto: update
+#      ddl-auto: none
+#      실제로 불리는 sql문을 보여줄지 선택하는 옵션
+    show-sql: true
+    properties:
+      hibernata:
+        dialect: org.hibernate.dialect.H2Dialect
+```
+### jar파일 실행
+- java -jar [.jar주소]
+
+### 다른 설정 파일로 jar파일 실행
+ - java -Despring.profiles.active=[local] -jar [.jar주소]
+
+### 외부라이브러리의 클래스에 스프링 부트가 다룰 수 있도록 하는 방법
+1. @Configuration : 자신이 bean을 제공하고 설정을 담기 위한 어노테이션, @Configuration이 붙은 클래스는 스프링 부트에서 사용할 설정, 빈들을 만들 수 있는 클래스 
+2. @Bean
+
+## Logging
+- Log level : 남길 메시지의 중요도
+> trace, debug, info, warn, error
+
+![image](https://user-images.githubusercontent.com/83503188/157022934-6eb4193f-60d7-4d3e-8af8-336ff940faef.png)
+
+### log level 설정
+![image](https://user-images.githubusercontent.com/83503188/157022948-acbdb245-ced6-42ef-a245-5caa8df8b5dc.png)
+- java -jar spring-boot.jar –trace
+```
+logging:
+    level:
+        root: debug
+        dev.yoon: info
+#  패키지별로 레벨 설정 다르게 할 수 있다
+```
+![image](https://user-images.githubusercontent.com/83503188/157022965-0a7fab64-f975-44bf-afa9-efae7935a96b.png)
+
+### LogBack
+- logback-spring.xml : 해당 파일은 스프링에서 요청하는 표준, 파일이 존재하는 경우 스프링 부트가 실행될 때 읽어서 실행
+
+- 일반적으로 서비스에서 몇일 이내의 보상을 해주는 경우 로그파일을 통해 처리가능
+
+
+
+## AOP(Aspect Oriented Programming) : 측면/양상 지향적인 프로그래밍, 서로 다른 비즈니스 로직이 공통적으로 가지는 관심에 대하여 고민하는 개발 지향
+- 여러 객체에 공통으로 적용할 수 있는 기능을 분리해 재사용성을 높여주는 기법
+- 어느 한 함수 처리에 걸리는 시간을 측정하고 싶다.
+- 측정을 위해 log를 찍는 행위는 실제 서비스의 흐름과는 별개
+- 서로 직접적인 연관은 없기 때문에 기능과는 별도로 작성하는 것이 이상적
+- 3가지 시나리오 : 실행 걸리는 시간, 함수의 인자, 함수의 반환 값들을 동일한 Log
+
+
+![image](https://user-images.githubusercontent.com/83503188/157022979-e4add59e-2d71-48a6-af6d-e95ff8866b56.png)
+
+
+### Join Points = Log가 가능한 시점(=Aspect가 들어갈 수 있는 시점)
+- Pointcut = 어떤 Join Point에 Aspect를 적용할 것인지를 지정하는 것
+- Advice: Aspect에서 실제로 실행될 함수
+
+![image](https://user-images.githubusercontent.com/83503188/157022999-a8e5fbd7-32bd-4e69-aea1-f8df2f6a6bca.png)
+
+- Build.grade에 추가
+> implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+
+## Validation
+- ‘제목이 비어있지 않아야 함, 본문은 400자 이하, …’이라는 제약사항
+- 사용자의 입력은 어떻게 들어올지 예측하기 어렵다
+- 소스 코드 상에서 일일이 제약사항을 검토하는 것은 너무 고되다
+- 사용자의 입력을 검증하는 과정이 Validation이라는 토픽으로 올라옴
+
+### Validation Annotation
+- Null여부 : @Null, @NotNull
+- String또는 Collection의 크기 : @Size 
+- String또는 Collection의 size > 0 인지 : @NotNull
+- String이 공백을 제외한 문자열인지 : @NotBlank
+- Build.grade에 추가
+> implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+![image](https://user-images.githubusercontent.com/83503188/157023012-086ba75c-26dc-438c-9867-3756ddb4ecff.png)
+
+
+
+- @NotNull : 변수가 null인지 아닌지를 구분하는 어노테이션
+- @NotEmpty : null이 아니면서, Object.size > 0 또는 Object.length인지를 구분하는 어노테이션 -> empty한 string : ""
+- @NotBlack : null이 아니면서, 공백으로만 구성된 문자열("    ")을 제외
+1. 열거형 컬렉션(List,...)에 사용x
+2. “”도 제외
+- @Valid를 통해 객체에 대한 검증도 가능
+
+

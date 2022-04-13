@@ -1,9 +1,0 @@
-# MacOS
-.DS_Store
-
-# IntelliJ
-*.iml
-
-out/
-.idea/
-.gitignore

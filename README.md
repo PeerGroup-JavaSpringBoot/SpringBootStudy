@@ -2,10 +2,13 @@
 ### `Spring Boot Fighter`
 > Since 2022.02.11
   - <a href="https://www.notion.so/Peer-Group-2-4f767d2bb511429db7b2bb4fd8c94055">Spring Boot Fighter 스터디 기록 노션</a>
-  - [Table of Contents](#second-study)
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
   - [Reference](#reference)
+
+### 스터디 진행 상황
+- [스프링부트 LIKELION THE ORIGIN 강의 수강](#)
+- [스프링부트 쇼핑몰 프로젝트 with JPA](#second-study)
   
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
@@ -47,7 +50,7 @@
 > 2) [미션 올리는 방법](https://www.notion.so/Mission-63c14f867c6a4a5583f143a9472255f7)
 
 - **Commit convention rule** : <br>
-   - => `peer/성명 : n번째 미션 수행 / Chapter1 내용 정리 `
+   - => `peer/성명 : Chapter1 실습 코드` OR  `peer/성명 : Chapter1 내용 정리`
    - (ex) `peer/성명 : 첫번째 미션 수행` or `peer/성명 : Chapter1 내용 정리`
    
  <br>

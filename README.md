@@ -1,7 +1,6 @@
 # Spring Boot Study
 ### `Spring Boot Fighter`
 > Since 2022.02.11
-
   - <a href="https://www.notion.so/Peer-Group-2-4f767d2bb511429db7b2bb4fd8c94055">Spring Boot Fighter 스터디 기록 노션</a>
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
@@ -85,6 +84,7 @@
 <br><br>
 
 ## 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
+<a href="https://www.notion.so/10-4-12-25255aad8c0f432fa439dd34a6186ce2">스프링 부트 쇼핑몰 프로젝트 공부 계획 정리 노션</a>
 <p align="center">
    <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />
 </p>

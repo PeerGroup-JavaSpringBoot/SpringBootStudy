@@ -7,8 +7,10 @@
   - [Reference](#reference)
 
 ### 스터디 진행 상황
-- [스프링부트 LIKELION THE ORIGIN 강의 수강](#first-study)(2/11 ~ 4/5 완료) ☑
-- [스프링부트 쇼핑몰 프로젝트 with JPA](#second-study)(4/12 ~ 6/20 예정)
+- [스프링부트 LIKELION THE ORIGIN 강의 수강](#first-study)
+  - (2/11 ~ 4/5 완료) ☑
+- [스프링부트 쇼핑몰 프로젝트 with JPA](#second-study)
+  - (4/12 ~ 6/20 예정)
   
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />

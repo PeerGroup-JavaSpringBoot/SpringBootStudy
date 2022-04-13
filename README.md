@@ -2,7 +2,7 @@
 ### `Spring Boot Fighter`
 > Since 2022.02.11
   - <a href="https://www.notion.so/Peer-Group-2-4f767d2bb511429db7b2bb4fd8c94055">Spring Boot Fighter 스터디 기록 노션</a>
-  - [Table of Contents](#table of contents)
+  - [Table of Contents](#second-study)
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
   - [Reference](#reference)
@@ -71,7 +71,7 @@
 
 # Table of Contents
 
-## 1) The Origin : 스프링부트 강의 (2/11 ~ 4/5) ☑
+### 1) The Origin : 스프링부트 강의 (2/11 ~ 4/5) ☑
 - [Chapter 1. Basics]
 - [Chapter 2. Spring Boot Basics (1)]
 - [Chapter 3. Spring Boot Basics (2)]
@@ -83,8 +83,8 @@
 - [Chapter 9. Spring과 Middlewares]
 
 <br><br>
-
-## 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
+### Second-Study
+### 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
 <a href="https://www.notion.so/10-4-12-25255aad8c0f432fa439dd34a6186ce2">스프링 부트 쇼핑몰 프로젝트 공부 계획 정리 노션</a>
 <p align="center">
    <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />

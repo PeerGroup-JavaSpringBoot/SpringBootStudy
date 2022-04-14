@@ -22,12 +22,12 @@
   
 <table >
    <tr>
-        <td align="center"><a href="https://github.com/gdakate"><img src="https://github.com/gdakate.png" width="100px;" alt=""/><br /><sub><b>Jinho Kim<br/>조용은</b></sub></a></td>
-<td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b>shm39<br/>김동윤</b></sub></a></td>
-<td align="center"><a href="https://github.com/Subinhyun"><img src="https://github.com/Subinhyun.png" width="100px;" alt=""/><br /><sub><b>Dev-hoon<br/>현수빈</b></sub></a></td>
-        <td align="center"><a href="https://github.com/yoon-youngjin"><img src="https://github.com/yoon-youngjin.png" width="100px;" alt=""/><br /><sub><b>Song Myeong Jin<br/>윤영진</b></sub></a></td>
-        <td align="center"><a href="https://github.com/LeeJin0527"><img src="https://github.com/LeeJin0527.png" width="100px;" alt=""/><br /><sub><b>dks<br/>이진</b></sub></a></td>
-        <td align="center"><a href="https://github.com/hehahihang"><img src="https://github.com/hehahihang.png" width="100px;" alt=""/><br /><sub><b>yoo-jimin127<br/>정광수</b></sub></a></td>
+        <td align="center"><a href="https://github.com/gdakate"><img src="https://github.com/gdakate.png" width="100px;" alt=""/><br /><sub><b><br/>조용은</b></sub></a></td>
+<td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b><br/>김동윤</b></sub></a></td>
+<td align="center"><a href="https://github.com/Subinhyun"><img src="https://github.com/Subinhyun.png" width="100px;" alt=""/><br /><sub><b><br/>현수빈</b></sub></a></td>
+        <td align="center"><a href="https://github.com/yoon-youngjin"><img src="https://github.com/yoon-youngjin.png" width="100px;" alt=""/><br /><sub><b><br/>윤영진</b></sub></a></td>
+        <td align="center"><a href="https://github.com/LeeJin0527"><img src="https://github.com/LeeJin0527.png" width="100px;" alt=""/><br /><sub><b><br/>이진</b></sub></a></td>
+        <td align="center"><a href="https://github.com/hehahihang"><img src="https://github.com/hehahihang.png" width="100px;" alt=""/><br /><sub><b>y<br/>정광수</b></sub></a></td>
    </tr>
 </table>
 

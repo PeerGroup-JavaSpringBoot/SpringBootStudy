@@ -27,7 +27,7 @@
 <td align="center"><a href="https://github.com/Subinhyun"><img src="https://github.com/Subinhyun.png" width="100px;" alt=""/><br /><sub><b><br/>현수빈</b></sub></a></td>
         <td align="center"><a href="https://github.com/yoon-youngjin"><img src="https://github.com/yoon-youngjin.png" width="100px;" alt=""/><br /><sub><b><br/>윤영진</b></sub></a></td>
         <td align="center"><a href="https://github.com/LeeJin0527"><img src="https://github.com/LeeJin0527.png" width="100px;" alt=""/><br /><sub><b><br/>이진</b></sub></a></td>
-        <td align="center"><a href="https://github.com/hehahihang"><img src="https://github.com/hehahihang.png" width="100px;" alt=""/><br /><sub><b>y<br/>정광수</b></sub></a></td>
+        <td align="center"><a href="https://github.com/hehahihang"><img src="https://github.com/hehahihang.png" width="100px;" alt=""/><br /><sub><b><br/>정광수</b></sub></a></td>
    </tr>
 </table>
 

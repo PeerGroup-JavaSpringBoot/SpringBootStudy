@@ -20,7 +20,7 @@
 
 <p align="center">
   
-<table >
+<table align="center" >
    <tr>
         <td align="center"><a href="https://github.com/gdakate"><img src="https://github.com/gdakate.png" width="100px;" alt=""/><br /><sub><b><br/>조용은</b></sub></a></td>
 <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b><br/>김동윤</b></sub></a></td>

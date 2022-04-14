@@ -22,40 +22,15 @@
   
 <table>
    <tr>
-        <td align="center"><a href="https://github.com/gdakate"><img src="https://avatars.githubusercontent.com/u/66901361?v=4" width="100px;" alt=""/><br /><sub><b>Jinho Kim<br/>조용은</b></sub></a></td>
-        <td align="center"><a href="https://github.com/Dev-hoon"><img src="https://avatars.githubusercontent.com/u/22619283?v=4" width="100px;" alt=""/><br /><sub><b>Dev-hoon<br/>김태훈</b></sub></a></td>
-        <td align="center"><a href="https://github.com/myway00"><img src="https://avatars.githubusercontent.com/u/54498071?v=4" width="100px;" alt=""/><br /><sub><b>shm39<br/>손호민</b></sub></a></td>
-        <td align="center"><a href="https://github.com/RumbleKAT"><img src="https://avatars.githubusercontent.com/u/18663105?v=4" width="100px;" alt=""/><br /><sub><b>Song Myeong Jin<br/>송명진</b></sub></a></td>
-        <td align="center"><a href="https://github.com/eldhdpswl"><img src="https://avatars.githubusercontent.com/u/89627776?v=4" width="100px;" alt=""/><br /><sub><b>dks<br/>신동금</b></sub></a></td>
-        <td align="center"><a href="https://github.com/yoo-jimin127"><img src="https://avatars.githubusercontent.com/u/66112716?v=4" width="100px;" alt=""/><br /><sub><b>yoo-jimin127<br/>유지민</b></sub></a></td>
+        <td align="center"><a href="https://github.com/gdakate"><img src="https://github.com/gdakate.png" width="100px;" alt=""/><br /><sub><b>Jinho Kim<br/>조용은</b></sub></a></td>
+        <td align="center"><a href="https://github.com/Subinhyun"><img src="https://github.com/Subinhyun.png" width="100px;" alt=""/><br /><sub><b>Dev-hoon<br/>현수빈</b></sub></a></td>
+        <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b>shm39<br/>김동윤</b></sub></a></td>
+        <td align="center"><a href="https://github.com/yoon-youngjin"><img src="https://github.com/yoon-youngjin.png" width="100px;" alt=""/><br /><sub><b>Song Myeong Jin<br/>윤영진</b></sub></a></td>
+        <td align="center"><a href="https://github.com/LeeJin0527"><img src="https://github.com/LeeJin0527.png" width="100px;" alt=""/><br /><sub><b>dks<br/>이진</b></sub></a></td>
+        <td align="center"><a href="https://github.com/hehahihang"><img src="https://github.com/hehahihang.png" width="100px;" alt=""/><br /><sub><b>yoo-jimin127<br/>정광수</b></sub></a></td>
    </tr>
 </table>
 
-<a href="https://github.com/myway00">
-  <img src="https://github.com/myway00.png" width="100">
-</a>
-  
- <a href="https://github.com/gdakate">
-  <img src="https://github.com/gdakate.png" width="100">
-</a>
-  
- <a href="https://github.com/hehahihang">
-  <img src="https://github.com/hehahihang.png" width="100">
-</a>
-  
- <a href="https://github.com/LeeJin0527">
-  <img src="https://github.com/LeeJin0527.png" width="100">
-</a>
-  
- <a href="https://github.com/Subinhyun">
-  <img src="https://github.com/Subinhyun.png" width="100">
-</a>
-  
- <a href="https://github.com/yoon-youngjin">
-  <img src="https://github.com/yoon-youngjin.png" width="100">
-</a>
-  
-</p>
 
 ### Repository-Rule
 

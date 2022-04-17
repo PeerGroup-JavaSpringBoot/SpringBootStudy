@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b214e58b-7e0d-4eda-a8d8-8b0d99137c7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter10/윤영진.md" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-study/contents/Chapter10/윤영진.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringBoot-study/assignment/윤영진/mission5/Challenge/auth" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -61,7 +60,8 @@
       <workItem from="1648467244066" duration="37000" />
       <workItem from="1649073669135" duration="470000" />
       <workItem from="1649077289550" duration="93000" />
-      <workItem from="1649159996920" duration="956000" />
+      <workItem from="1649159996920" duration="1035000" />
+      <workItem from="1649162740305" duration="21000" />
     </task>
     <servers />
   </component>

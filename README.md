@@ -91,7 +91,9 @@
 - [7장 주문]
 - [8장 장바구니]
 
-
+- written By 
+- <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b><br/>김동윤</b></sub></a></td>
+- 
 ### Reference
 
 - [CS-study](https://github.com/Seogeurim/CS-study#repository-rule)

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>상품 데이터 출력 예제</h1>
+    <div>
+        상품명 : <span th:text="${itemDto.itemName}"></span>
+    </div>
+    <div>
+        상품 상세 설명 : <span th:text="${itemDto.itemDetail}"></span>
+    </div>
+    <div>
+        상품 등록일 : <span th:text="${itemDto.regTime}"></span>
+    </div>
+    <div>
+        상품 가격 : <span th:text="${itemDto.price}"></span>
+    </div>
+</body>
+</html>

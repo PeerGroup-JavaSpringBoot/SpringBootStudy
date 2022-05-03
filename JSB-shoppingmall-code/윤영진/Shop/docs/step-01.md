@@ -174,7 +174,7 @@ emf.close();
 #### QueryDslPredicateExecutor
 > Predicate? 
 > 
-> '이 조건이 맞다'고 판단하는 근거를 함수로 제공하는 것 !
+> '이 조건이 맞다'고 판단하는 근거를 함수로 제공하는 것
 
 - Repository에 Predicate를 파라미터로 전달하기 위해서 QueryDslPredicateExecutor 인터페이스를 상속
 - QueryDslPredicateExecutor의 메소드
@@ -184,6 +184,48 @@ emf.close();
   - [x] Page<T> findAll(Predicate, Pageable): 조건에 맞는 페이지 데이터 반환
   - [x] Iterable findAll(Predicate, Sort): 조건에 맞는 정렬된 데이터 반환
   - [x] T findOne(Predicate): 조건에 맞는 데이터 1개 반환
-  
+
+
+
+---
+
+### `@Enumerated`을 이용할 때 반드시 EnumType은 String을 사용하자!
+
+- `@Enumerated` 애너테이션에는 두 가지 EnumType이 존재
+  - EnumType.ORDINAL: enum 순서 값을 DB에 저장
+  - EnumType.STRING: enum 이름을 DB에 저장
+
+```java
+enum OrderStatus{
+    READY, FINISH
+        }
+```
+
+- 이와 같이 OrderStatus의 enum타입이 명시된 경우라고 가정하자.
+
+```java
+@Enumerated(EnumType.ORDINAL)
+private OrderStatus orderstatus;
+```
+
+- EnumType.ORDINAL인 경우 DB에 READY는 1, FINISH는 2인 상태로 저장
+
+```java
+@Enumerated(EnumType.STRING)
+private OrderStatus orderstatus;
+```
+
+- EnumType.STRING인 경우 DB에 READY, FINISH로 저장
+
+- 만약 OrderStatus에 필드가 추가 된다면?
+
+```java
+enum OrderStatus{
+    READY, DELIVERY,  FINISH
+        }
+```
+
+- EnumType.ORDINAL인 경우에 기존 DB의 OrderStatus 속성값의 2는 DELEVERY가 되어 큰 문제가 발생
+- **@Enumerated의 기본 값은 EnumType.ORDINAL이므로 반드시 EnumType.STRING으로 사용하자!**
 
 

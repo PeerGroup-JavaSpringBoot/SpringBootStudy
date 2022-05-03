@@ -1,6 +1,7 @@
 package dev.yoon.shop.domain;
 
 import dev.yoon.shop.constant.ItemSellStatus;
+import dev.yoon.shop.domain.base.BaseTimeEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,7 +13,7 @@ import java.time.LocalDateTime;
 @Getter @Setter
 @Table(name = "item")
 @ToString
-public class Item {
+public class Item extends BaseTimeEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "item_id")
@@ -34,8 +35,5 @@ public class Item {
     @Enumerated(EnumType.STRING)
     private ItemSellStatus itemSellStatus;
 
-    private LocalDateTime regTime;
-
-    private LocalDateTime updateTime;
 
 }

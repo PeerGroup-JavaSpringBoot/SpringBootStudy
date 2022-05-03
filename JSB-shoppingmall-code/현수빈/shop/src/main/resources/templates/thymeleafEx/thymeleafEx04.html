@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>상품 리스트 출력 예제</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>순번</td>
+                <td>상품명</td>
+                <td>상품설명</td>
+                <td>가격</td>
+                <td>상품등록일</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="itemDto, status: ${itemDtoList}">
+<!--                <td th:if="${status.even}" th:text="짝수"></td>-->
+<!--                <td th:unless="${status.even}" th:text="홀수"></td>-->
+                <td th:switch="${status.even}">
+                    <span th:case="true">짝수</span>
+                    <span th:case="false">홀수</span>
+                </td>
+                <td th:text="${status.itemName}"></td>
+                <td th:text="${status.itemDetail}"></td>
+                <td th:text="${status.price}"></td>
+                <td th:text="${status.regTime}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

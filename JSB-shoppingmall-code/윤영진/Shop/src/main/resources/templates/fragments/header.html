@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <div th:fragment="header">
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
@@ -12,23 +13,23 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/item/new">상품 등록</a>
+                <li class="nav-item" >
+                    <a class="nav-link" sec:authorize="hasRole('ADMIN')" href="/admin/item/new">상품 등록</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" sec:authorize="hasRole('ADMIN')" href="/admin/items">상품 관리</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/items">상품 관리</a>
+                    <a class="nav-link" sec:authorize="isAuthenticated()" href="/cart">장바구니</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cart">장바구니</a>
+                <li class="nav-item" >
+                    <a class="nav-link" sec:authorize="isAuthenticated()" href="/orders">구매이력</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/orders">구매이력</a>
+                <li class="nav-item" >
+                    <a class="nav-link" sec:authorize="isAnonymous()" href="/members/login">로그인</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/members/login">로그인</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/members/logout">로그아웃</a>
+                <li class="nav-item" >
+                    <a class="nav-link" sec:authorize="isAuthenticated()" href="/members/logout">로그아웃</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" th:action="@{/}" method="get">

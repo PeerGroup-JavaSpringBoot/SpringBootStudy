@@ -1,6 +1,6 @@
-package dev.yoon.shop.repository;
+package dev.yoon.shop.domain.item.repository;
 
-import dev.yoon.shop.domain.Item;
+import dev.yoon.shop.domain.item.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;

@@ -1,13 +1,12 @@
-package dev.yoon.shop.domain;
+package dev.yoon.shop.domain.item.entity;
 
-import dev.yoon.shop.constant.ItemSellStatus;
+import dev.yoon.shop.domain.item.constant.ItemSellStatus;
 import dev.yoon.shop.domain.base.BaseTimeEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Getter @Setter

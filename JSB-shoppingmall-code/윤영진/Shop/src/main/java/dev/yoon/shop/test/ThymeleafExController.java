@@ -1,7 +1,6 @@
-package dev.yoon.shop.controller;
+package dev.yoon.shop.test;
 
-import dev.yoon.shop.domain.Item;
-import dev.yoon.shop.dto.ItemDto;
+import dev.yoon.shop.domain.item.dto.ItemDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

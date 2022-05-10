@@ -1,4 +1,4 @@
-package dev.yoon.shop.dto;
+package dev.yoon.shop.domain.item.dto;
 
 import lombok.Getter;
 import lombok.Setter;

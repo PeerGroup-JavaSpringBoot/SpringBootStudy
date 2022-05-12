@@ -64,15 +64,15 @@
 # Table of Contents
 ### First-Study
 ### 1) The Origin : 스프링부트 강의 (2/11 ~ 4/5) ☑
-- [Chapter 1. Basics]
-- [Chapter 2. Spring Boot Basics (1)]
-- [Chapter 3. Spring Boot Basics (2)]
-- [Chapter 4. CRUD & Data (1)]
-- [Chapter 5. CRUD & Data (2)]
-- [Chapter 6. Spring Boot 기능활용 (1)]
-- [Chapter 7. Spring Boot 기능활용 (2)]
-- [Chapter 8. Spring Security]
-- [Chapter 9. Spring과 Middlewares]
+- [Chapter 1. Basics] ☑
+- [Chapter 2. Spring Boot Basics (1)] ☑
+- [Chapter 3. Spring Boot Basics (2)] ☑
+- [Chapter 4. CRUD & Data (1)] ☑
+- [Chapter 5. CRUD & Data (2)] ☑
+- [Chapter 6. Spring Boot 기능활용 (1)] ☑
+- [Chapter 7. Spring Boot 기능활용 (2)] ☑
+- [Chapter 8. Spring Security] ☑
+- [Chapter 9. Spring과 Middlewares] ☑
 
 <br><br>
 ### Second-Study
@@ -82,10 +82,10 @@
    <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />
 </p>
 
-- [1장 개발 환경 구축]
-- [2장 Spring Data JPA]
-- [3장 Thymeleaf 학습하기]
-- [4장 스프링 시큐리티를 이용한 회원 가입 및 로그인]
+- [1장 개발 환경 구축] ☑
+- [2장 Spring Data JPA] ☑
+- [3장 Thymeleaf 학습하기] ☑
+- [4장 스프링 시큐리티를 이용한 회원 가입 및 로그인] ☑
 - [5장 연관 관계 매핑]
 - [6장 상품 등록 및 조회하기]
 - [7장 주문]

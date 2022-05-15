@@ -36,3 +36,4 @@ public class Email {
         return value.substring(0, index);
     }
 }
+

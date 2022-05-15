@@ -1,18 +1,17 @@
 package dev.yoon.shop.domain.item.entity;
 
+import dev.yoon.shop.domain.base.BaseEntity;
 import dev.yoon.shop.domain.item.constant.ItemSellStatus;
 import dev.yoon.shop.domain.base.BaseTimeEntity;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
-@Getter @Setter
+@Getter
 @Table(name = "item")
-@ToString
-public class Item extends BaseTimeEntity {
+@NoArgsConstructor()
+@Entity
+public class Item extends BaseEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "item_id")
@@ -33,6 +32,16 @@ public class Item extends BaseTimeEntity {
 
     @Enumerated(EnumType.STRING)
     private ItemSellStatus itemSellStatus;
+
+    @Builder
+    public Item(Long id, String itemNm, int price, int stockNumber, String itemDetail, ItemSellStatus itemSellStatus) {
+        this.id = id;
+        this.itemNm = itemNm;
+        this.price = price;
+        this.stockNumber = stockNumber;
+        this.itemDetail = itemDetail;
+        this.itemSellStatus = itemSellStatus;
+    }
 
 
 }

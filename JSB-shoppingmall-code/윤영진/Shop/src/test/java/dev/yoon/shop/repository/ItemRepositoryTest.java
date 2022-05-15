@@ -47,26 +47,26 @@ class ItemRepositoryTest {
 //    @Test
 //    @DisplayName("상품 저장 테스트")
     public void createItemTest() {
-        for (int i = 1; i <= 10; i++) {
-            Item item = new Item();
-            item.setItemNm("테스트 상품" + i);
-            item.setPrice(10000 + i);
-
-            if (i >= 5) {
-                item.setItemDetail("테스트 상품 상세 설명" + i);
-            }else {
-                item.setItemDetail("테스트 테스트 테스트 테스트" + i);
-            }
-            if(i % 2 ==0) {
-                item.setItemSellStatus(ItemSellStatus.SELL);
-            }
-            else {
-                item.setItemSellStatus(ItemSellStatus.SOLD_OUT);
-            }
-            item.setStockNumber(100);
-            itemRepository.save(item);
-
-        }
+//        for (int i = 1; i <= 10; i++) {
+//            Item item = new Item();
+//            item.setItemNm("테스트 상품" + i);
+//            item.setPrice(10000 + i);
+//
+//            if (i >= 5) {
+//                item.setItemDetail("테스트 상품 상세 설명" + i);
+//            }else {
+//                item.setItemDetail("테스트 테스트 테스트 테스트" + i);
+//            }
+//            if(i % 2 ==0) {
+//                item.setItemSellStatus(ItemSellStatus.SELL);
+//            }
+//            else {
+//                item.setItemSellStatus(ItemSellStatus.SOLD_OUT);
+//            }
+//            item.setStockNumber(100);
+//            itemRepository.save(item);
+//
+//        }
     }
 
     @Test
@@ -168,23 +168,23 @@ class ItemRepositoryTest {
 
     public void createItemList2(){
         for(int i=1;i<=5;i++){
-            Item item = new Item();
-            item.setItemNm("테스트 상품" + i);
-            item.setPrice(10000 + i);
-            item.setItemDetail("테스트 상품 상세 설명" + i);
-            item.setItemSellStatus(ItemSellStatus.SELL);
-            item.setStockNumber(100);
-            itemRepository.save(item);
+//            Item item = new Item();
+//            item.setItemNm("테스트 상품" + i);
+//            item.setPrice(10000 + i);
+//            item.setItemDetail("테스트 상품 상세 설명" + i);
+//            item.setItemSellStatus(ItemSellStatus.SELL);
+//            item.setStockNumber(100);
+//            itemRepository.save(item);
         }
 
         for(int i=6;i<=10;i++){
-            Item item = new Item();
-            item.setItemNm("테스트 상품" + i);
-            item.setPrice(10000 + i);
-            item.setItemDetail("테스트 상품 상세 설명" + i);
-            item.setItemSellStatus(ItemSellStatus.SOLD_OUT);
-            item.setStockNumber(0);
-            itemRepository.save(item);
+//            Item item = new Item();
+//            item.setItemNm("테스트 상품" + i);
+//            item.setPrice(10000 + i);
+//            item.setItemDetail("테스트 상품 상세 설명" + i);
+//            item.setItemSellStatus(ItemSellStatus.SOLD_OUT);
+//            item.setStockNumber(0);
+//            itemRepository.save(item);
         }
     }
     @Test

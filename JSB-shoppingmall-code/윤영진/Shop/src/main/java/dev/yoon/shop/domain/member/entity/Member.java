@@ -1,5 +1,6 @@
 package dev.yoon.shop.domain.member.entity;
 
+import dev.yoon.shop.domain.base.BaseEntity;
 import dev.yoon.shop.domain.base.BaseTimeEntity;
 import dev.yoon.shop.domain.member.constant.Role;
 import dev.yoon.shop.domain.model.Address;
@@ -12,9 +13,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "member")
 @Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 @ToString
-public class Member extends BaseTimeEntity {
+public class Member extends BaseEntity {
 
     @Id
     @Column(name="member_id")

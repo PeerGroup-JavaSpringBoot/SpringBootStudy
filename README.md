@@ -14,6 +14,7 @@
   
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
+	
 </p>
 <p align="center">
 	<a href="https://github.com/PeerGroup-JavaSpringBoot/SpringBootStudy/search?l=TSX&type=code"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/PeerGroup-JavaSpringBoot/SpringBootStudy"></a>
@@ -22,6 +23,7 @@
 	<a href="https://github.com/PeerGroup-JavaSpringBoot/SpringBootStudy/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/PeerGroup-JavaSpringBoot/SpringBootStudy"></a>
 
 </p>
+
 ### Collaborator
 
 <p align="center">

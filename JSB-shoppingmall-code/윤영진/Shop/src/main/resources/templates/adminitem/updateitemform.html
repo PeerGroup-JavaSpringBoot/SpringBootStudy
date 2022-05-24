@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/shoplayout}">
+
+<!-- 사용자 CSS 추가 -->
+<th:block layout:fragment="css">
+    <style>
+        .input-group {
+            margin-bottom : 15px
+        }
+    </style>
+</th:block>
+
+<div layout:fragment="content" class="container center_div w-50 mt-3 mb-2">
+
+    <form role="form" method="post" th:action="|/admin/items/${itemId}|" enctype="multipart/form-data" th:object="${updateItemDto}">
+
+        <p class="h2">
+            상품 수정
+        </p>
+
+        <input type="hidden" th:field="*{itemId}">
+
+        <div class="form-group mb-3">
+            <select th:field="*{itemSellStatus}" class="form-select">
+                <option value="SELL">판매중</option>
+                <option value="SOLD_OUT">품절</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">상품명</span>
+            </div>
+            <input type="text" th:field="*{itemName}" class="form-control" placeholder="상품명을 입력해주세요">
+        </div>
+        <p th:errors="*{itemName}" class="field-error">Incorrect data</p>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">가격</span>
+            </div>
+            <input type="number" th:field="*{price}" class="form-control" th:errorclass="field-error" placeholder="상품의 가격을 입력해주세요">
+        </div>
+        <p th:if="${#fields.hasErrors('price')}" th:errors="*{price}" class="field-error">Incorrect data</p>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">재고</span>
+            </div>
+            <input type="number" th:field="*{stockNumber}" class="form-control" th:errorclass="field-error" placeholder="상품의 재고를 입력해주세요">
+        </div>
+        <p th:errors="*{stockNumber}" class="field-error">Incorrect data</p>
+
+        <div class="input-group">
+            <span class="input-group-text">상품 상세 내용</span>
+            <textarea class="form-control" aria-label="With textarea" th:field="*{itemDetail}"></textarea>
+        </div>
+        <p th:errors="*{itemDetail}" class="field-error">Incorrect data</p>
+
+
+        <th:block th:each="itemImageDto, status: ${updateItemDto.itemImageDtos}">
+            <p th:id="|original_image_name${status.count}|" th:text="${itemImageDto.originalImageName}">이미지 파일명</p>
+            <input type="hidden" name="originalImageNames" th:value="${itemImageDto.originalImageName}" th:id="|originalImageName${status.count}|">
+            <div class="input-group mb-3">
+                <input class="form-control custom-file-input" th:id="|item_img_file${status.count}|" type="file"
+                       aria-describedby="inputGroupFileAddon04" aria-label="Upload" name="itemImageFiles">
+                <input type="hidden" name="itemImageIds" th:value="${itemImageDto.itemImageId}">
+                <button class="btn btn-outline-secondary" type="button" th:value="${status.count}" onclick="deleteItemImg(this)">삭제</button>
+            </div>
+        </th:block>
+
+        <div class="mt-3" th:if="${#fields.hasGlobalErrors()}">
+            <p class="field-error text-center" th:each="error : ${#fields.globalErrors()}" th:text="${error}">글로벌 오류 메시지</p>
+        </div>
+
+        <div class="mt-3 text-center">
+            <button type="submit" class="btn btn-primary">상품 수정</button>
+        </div>
+
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+
+    </form>
+
+</div>
+
+
+<!-- 사용자 스크립트 추가 -->
+<th:block layout:fragment="script">
+
+    <script th:inline="javascript">
+        $(document).ready(function(){
+            bindDomEvent();
+        });
+
+        function bindDomEvent() {
+            $(".custom-file-input").on("change", function() {
+                var fileName = $(this).val().split("\\").pop();  //이미지 파일명
+                var fileExt = fileName.substring(fileName.lastIndexOf(".")+1); // 확장자 추출
+                fileExt = fileExt.toLowerCase(); //소문자 변환
+
+                if(fileExt != "jpg" && fileExt != "jpeg" && fileExt != "gif" && fileExt != "png" && fileExt != "bmp"){
+                    alert("이미지 파일만 등록이 가능합니다.");
+                    $(this).val("");
+                    return;
+                }
+            });
+        }
+
+        function deleteItemImg(element) {
+            // 파일 삭제
+            var deleteItemImgId = element.value;
+            var deleteItemImg = "item_img_file" + deleteItemImgId;
+            $("#" + deleteItemImg).val("");
+
+            // 원본 파일 삭제
+            var originalImageName = "original_image_name" + deleteItemImgId;     // 원본 이미지명 삭제
+            var deleteOriginalImageName = "originalImageName" + deleteItemImgId; // 원본 이미지 파일명 hidden 값 삭제
+            $("#" + originalImageName).text("");
+            $("#" + deleteOriginalImageName).val("");
+        }
+
+    </script>
+
+</th:block>
+
+</html>

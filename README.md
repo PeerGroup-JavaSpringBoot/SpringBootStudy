@@ -14,6 +14,14 @@
   
 <p align="center">
   <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
+	
+</p>
+<p align="center">
+	<a href="https://github.com/PeerGroup-JavaSpringBoot/SpringBootStudy/search?l=TSX&type=code"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/PeerGroup-JavaSpringBoot/SpringBootStudy"></a>
+	<a href="https://github.com/PeerGroup-JavaSpringBoot/SpringBootStudy/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/PeerGroup-JavaSpringBoot/SpringBootStudy?color=success"></a>
+	<a href="https://github.com/PeerGroup-JavaSpringBoot/SpringBootStudy/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PeerGroup-JavaSpringBoot/SpringBootStudy"></a>
+	<a href="https://github.com/PeerGroup-JavaSpringBoot/SpringBootStudy/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/PeerGroup-JavaSpringBoot/SpringBootStudy"></a>
+
 </p>
 
 ### Collaborator
@@ -64,29 +72,29 @@
 # Table of Contents
 ### First-Study
 ### 1) The Origin : 스프링부트 강의 (2/11 ~ 4/5) ☑
-- [Chapter 1. Basics]
-- [Chapter 2. Spring Boot Basics (1)]
-- [Chapter 3. Spring Boot Basics (2)]
-- [Chapter 4. CRUD & Data (1)]
-- [Chapter 5. CRUD & Data (2)]
-- [Chapter 6. Spring Boot 기능활용 (1)]
-- [Chapter 7. Spring Boot 기능활용 (2)]
-- [Chapter 8. Spring Security]
-- [Chapter 9. Spring과 Middlewares]
+- [Chapter 1. Basics] ☑
+- [Chapter 2. Spring Boot Basics (1)] ☑
+- [Chapter 3. Spring Boot Basics (2)] ☑
+- [Chapter 4. CRUD & Data (1)] ☑
+- [Chapter 5. CRUD & Data (2)] ☑
+- [Chapter 6. Spring Boot 기능활용 (1)] ☑
+- [Chapter 7. Spring Boot 기능활용 (2)] ☑
+- [Chapter 8. Spring Security] ☑
+- [Chapter 9. Spring과 Middlewares] ☑
 
 <br><br>
 ### Second-Study
-### 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ )
+### 2) 스프링 부트 쇼핑몰 프로젝트 with JPA (4/12 ~ 6/7 )
 <a href="https://www.notion.so/10-4-12-25255aad8c0f432fa439dd34a6186ce2">스프링 부트 쇼핑몰 프로젝트 공부 계획 정리 노션</a>
 <p align="center">
    <img src="https://user-images.githubusercontent.com/76711238/162882556-6179c0b7-00a4-4164-ab62-b12b34fd3046.png" alt="coding" width="150px" />
 </p>
 
-- [1장 개발 환경 구축]
-- [2장 Spring Data JPA]
-- [3장 Thymeleaf 학습하기]
-- [4장 스프링 시큐리티를 이용한 회원 가입 및 로그인]
-- [5장 연관 관계 매핑]
+- [1장 개발 환경 구축] ☑
+- [2장 Spring Data JPA] ☑
+- [3장 Thymeleaf 학습하기] ☑
+- [4장 스프링 시큐리티를 이용한 회원 가입 및 로그인] ☑
+- [5장 연관 관계 매핑] ☑
 - [6장 상품 등록 및 조회하기]
 - [7장 주문]
 - [8장 장바구니]

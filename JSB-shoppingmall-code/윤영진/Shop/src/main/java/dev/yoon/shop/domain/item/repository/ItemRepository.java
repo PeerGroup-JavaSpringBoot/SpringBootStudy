@@ -1,14 +1,16 @@
 package dev.yoon.shop.domain.item.repository;
 
 import dev.yoon.shop.domain.item.entity.Item;
+import dev.yoon.shop.web.manageitem.repository.ManageItemRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface ItemRepository extends JpaRepository<Item, Long>, QuerydslPredicateExecutor<Item> {
+public interface ItemRepository extends JpaRepository<Item, Long>, QuerydslPredicateExecutor<Item>, ManageItemRepository {
 
     List<Item> findByItemNm(String name);
 

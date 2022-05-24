@@ -377,3 +377,250 @@ public void auditingTest() {
 
 ![image](https://user-images.githubusercontent.com/83503188/168466395-4c8d512a-5baf-4a96-8ded-1dc8fec7acbb.png)
 
+--- 
+
+## Cascade REMOVE vs. orphanRemoval = true
+
+### Cascade REMOVE 
+
+`Cascade.REMOVE`는 부모 엔티티가 삭제되면 자식 엔티티도 삭제된다. 즉, 부모가 자식의 삭제 생명 주기를 관리한다. 만약 `CascadeType.PERSIST`도 함께 사용하면, 부모가 자식의 전체 생명 주기를 관리하게 된다.
+
+**해당 옵션의 경우에는 부모 엔티티가 자식 엔티티와의 관계를 제거해도 자식 엔티티는 삭제되지 않고 그대로 남아있다.**
+
+`Cascade.ALL` = `Cascade.PERSIST` + `Cascade.REMOVE`
+
+
+
+```java
+@Entity
+@NoArgsConstructor
+@Setter @Getter
+public class Member {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn
+    private Team team;
+}
+
+public class Team {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @OneToMany(
+            mappedBy = "team",
+            fetch = FetchType.LAZY)
+            cascade = CascadeType.ALL)
+    private List<Member> members = new ArrayList<>();
+
+    public void addMember(Member member) {
+        members.add(member);
+        member.setTeam(this);
+    }
+}
+
+```
+
+### 부모 엔티티를 삭제하는 경우
+
+```java
+@DataJpaTest
+class TeamTest {
+
+    @Autowired
+    private TeamRepository teamRepository;
+
+    @Autowired
+    private MemberRepository memberRepository;
+
+    @DisplayName("CascadeType.REMOVE - 부모 엔티티(Team)을 삭제하는 경우")
+    @Test
+    void cascadeType_Remove_InCaseOfTeamRemoval() {
+        // given
+        Member member1 = new Member();
+        Member member2 = new Member();
+
+        Team team = new Team();
+
+        team.addMember(member1);
+        team.addMember(member2);
+
+        teamRepository.save(team);
+
+        // when
+        teamRepository.delete(team);
+
+        // then
+        List<Team> teams = teamRepository.findAll();
+        List<Member> members = memberRepository.findAll();
+
+        assertEquals(0, teams.size());
+        assertEquals(0, members.size());
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/83503188/168570179-dc07ccb8-4867-42dc-ac7d-e331b7b5691c.png)
+
+Member에 대한 save를 해주지 않았음에도 불구하고 team에 속한 Member에 대한 insert sql이 실행됨을 볼 수 있다. -> CascadeType.PERSIST
+
+![image](https://user-images.githubusercontent.com/83503188/168569783-9f45da20-27ce-4708-9a46-c407b7dc54a3.png)
+
+Member에 대한 delete를 해주지 않았음에도 불구하고 team에 속해있던 member에 대한 delete sql이 실행됨을 볼 수 있다. -> CascadeType.REMOVE
+
+### 부모 엔티티에서 자식 엔티티를 제거하는 경우
+
+```java
+@DisplayName("CascadeType.REMOVE - 부모 엔티티(Team)에서 자식 엔티티(Member)를 제거하는 경우")
+    @Test
+    void cascadeType_Remove_InCaseOfMemberRemovalFromTeam() {
+        // given
+        Member member1 = new Member();
+        Member member2 = new Member();
+
+        Team team = new Team();
+
+        team.addMember(member1);
+        team.addMember(member2);
+
+        teamRepository.save(team);
+
+        // when
+        team.getMembers().remove(0);
+
+        // then
+        List<Team> teams = teamRepository.findAll();
+        List<Member> members = memberRepository.findAll();
+
+        assertEquals(1, teams.size());
+        assertEquals(2, members.size());
+    }
+```
+
+![image](https://user-images.githubusercontent.com/83503188/168570778-e6a4ac19-61fc-4661-ba46-eff9a398fb8b.png)
+
+부모 엔티티(=Team)에서 자식 엔티티(=Member)를 삭제했음에도 불구하고 delete sql이 실행되지 않았다. 영속성 전이 삭제 옵션은 부모와 자식의 관계가 끊어졌다 해서 자식을 삭제하지 않기 때문이다.
+
+
+## orphanRemoval = true
+
+`orphanRemoval = true` 또한 부모 엔티티가 삭제되면 자식 엔티티도 삭제된다. 따라서 `CascadeType.PERSIST`를 함께 사용하면, 이때도 부모가 자식의 전체 생명 주기를 관리하게 된다.
+
+
+```java
+@Entity
+public class Team {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @OneToMany(
+        mappedBy = "team",
+        fetch = FetchType.LAZY,
+        cascade = CascadeType.PERSIST,
+        orphanRemoval = true
+    )
+    private List<Member> members = new ArrayList<>();
+}
+```
+
+### 부모 엔티티를 삭제하는 경우
+```java
+@DisplayName("orphanRemoval = true - 부모 엔티티(Team)을 삭제하는 경우")
+@Test
+void orphanRemoval_True_InCaseOfTeamRemoval() {
+// given
+Member member1 = new Member();
+Member member2 = new Member();
+
+        Team team = new Team();
+
+        team.addMember(member1);
+        team.addMember(member2);
+
+        teamRepository.save(team);
+
+        // when
+        teamRepository.delete(team);
+
+        // then
+        List<Team> teams = teamRepository.findAll();
+        List<Member> members = memberRepository.findAll();
+
+        assertEquals(0, teams.size());
+        assertEquals(0, members.size());
+    }
+```
+
+![image](https://user-images.githubusercontent.com/83503188/168571337-414a8193-9386-4da6-957a-a889d124ee2d.png)
+
+CascadeType.REMOVE와 마찬가지로 부모 엔티티를 삭제함으로써 연관된 Member에 대한 delete sql이 실행된다. 
+
+
+### 부모 엔티티에서 자식 엔티티를 제거하는 경우
+
+
+```java
+@DisplayName("orphanRemoval = true - 부모 엔티티(Team)에서 자식 엔티티(Member)를 제거하는 경우")
+    @Test
+    void orphanRemoval_True_InCaseOfMemberRemovalFromTeam() {
+        // given
+        Member member1 = new Member();
+        Member member2 = new Member();
+
+        Team team = new Team();
+
+        team.addMember(member1);
+        team.addMember(member2);
+
+        teamRepository.save(team);
+
+        // when
+        team.getMembers().remove(0);
+
+        // then
+        List<Team> teams = teamRepository.findAll();
+        List<Member> members = memberRepository.findAll();
+
+        assertEquals(1, teams.size());
+        assertEquals(1, members.size());
+    }
+```
+
+![image](https://user-images.githubusercontent.com/83503188/168571889-118528ac-decc-4f44-8d13-990bd0288704.png)
+
+이전과는 다르게 부모에서 삭제한 자식에 대해서 delete sql이 1번 실행된다. 고아 객체 옵션은 부모와 자식의 관계가 끊어지면 자식을 고아로 취급하고 자식을 삭제하기 때문이다.
+
+## 비교 결과
+- 부모 엔티티 삭제 
+  - CascadeType.REMOVE와 orphanRemoval = true는 부모 엔티티를 삭제하면 자식 엔티티도 삭제한다.
+
+- 부모 엔티티에서 자식 엔티티 제거 
+  - CascadeType.REMOVE는 자식 엔티티가 그대로 남아있는 반면, orphanRemoval = true는 자식 엔티티를 제거한다.
+
+## 주의점
+두 케이스 모두 자식 엔티티에 딱 하나의 부모 엔티티가 연관되어 있는 경우에만 사용해야 한다.
+
+예를 들어 Member(자식)을 Team(부모)도 알고 Parent(부모)도 알고 있다면, CascadeType.REMOVE 또는 orphanRemoval = true를 조심할 필요가 있다. 자식 엔티티를 삭제할 상황이 아닌데도 어느 한쪽의 부모 엔티티를 삭제했거나 부모 엔티티로부터 제거됐다고 자식이 삭제되는 불상사가 일어날 수 있기 때문이다.
+
+
+
+
+
+
+
+
+
+
+
+
+

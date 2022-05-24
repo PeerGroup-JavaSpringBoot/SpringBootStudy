@@ -44,6 +44,9 @@ dependencies {
 
     implementation 'com.querydsl:querydsl-jpa'
 
+    // modelmapper
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
+
     annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa"
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api"

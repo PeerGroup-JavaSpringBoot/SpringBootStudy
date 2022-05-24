@@ -2,6 +2,7 @@ package dev.yoon.shop.domain.member.application;
 
 import dev.yoon.shop.domain.member.entity.Member;
 import dev.yoon.shop.domain.member.exception.EmailDuplicateException;
+import dev.yoon.shop.domain.member.exception.MemberNotFoundException;
 import dev.yoon.shop.domain.member.repository.MemberRepository;
 import dev.yoon.shop.domain.model.Email;
 import dev.yoon.shop.global.config.security.UserDetailsImpl;
@@ -44,5 +45,10 @@ public class MemberService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException(ErrorCode.LOGIN_ERROR.getMessage()));
 
         return new UserDetailsImpl(member);
+    }
+
+    public Member getMemberByEmail(String email) {
+        return memberRepository.findByEmail(Email.of(email))
+                .orElseThrow(() -> new MemberNotFoundException());
     }
 }

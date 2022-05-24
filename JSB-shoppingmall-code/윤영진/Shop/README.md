@@ -5,4 +5,6 @@
 
 1. [**Spring Data JPA**](https://github.com/yoon-youngjin/SSS/blob/main/Shop/docs/step-01.md)
 2. [**Thymeleaf**](https://github.com/yoon-youngjin/SSS/blob/main/Shop/docs/step-02.md)
-2. [**Spring Security**](https://github.com/yoon-youngjin/SSS/blob/main/Shop/docs/step-03.md)
+3. [**Spring Security**](https://github.com/yoon-youngjin/SSS/blob/main/Shop/docs/step-03.md)
+4. [**Relation Mapping**](https://github.com/yoon-youngjin/SSS/blob/main/Shop/docs/step-04.md)
+5. [**Product Create & Get**](https://github.com/yoon-youngjin/SSS/blob/main/Shop/docs/step-05.md)

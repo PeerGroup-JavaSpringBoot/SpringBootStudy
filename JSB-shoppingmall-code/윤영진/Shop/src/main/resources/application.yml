@@ -9,9 +9,17 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         default_batch_fetch_size: 100
         show_sql: true
         format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB # 파일 업로드 요청 시 하나의 파일 크기 10MB로 제한
+      max-request-size: 100MB # 파일 업로드 요청 시 모든 파일의 크기의합 100MB로 제한
+
+file:
+  upload:
+    path: /C:/Users/dudwl/temp/

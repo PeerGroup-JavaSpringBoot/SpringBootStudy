@@ -35,6 +35,7 @@ public class ItemDtlDto {
     public ItemDtlDto(
             Long itemId, String itemName, Integer price, String itemDetail, Integer stockNumber,
             ItemSellStatus itemSellStatus, List<ItemImageDto> itemImageDtos) {
+
         this.itemId = itemId;
         this.itemName = itemName;
         this.price = price;
@@ -42,6 +43,7 @@ public class ItemDtlDto {
         this.stockNumber = stockNumber;
         this.itemSellStatus = itemSellStatus;
         this.itemImageDtos = itemImageDtos;
+
     }
 
     public static ItemDtlDto of(Item item, List<ItemImage> itemImages) {

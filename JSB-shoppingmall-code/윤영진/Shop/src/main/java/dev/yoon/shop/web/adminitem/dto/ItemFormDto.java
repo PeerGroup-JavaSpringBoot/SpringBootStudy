@@ -50,6 +50,7 @@ public class ItemFormDto {
     }
 
     public Item toEntity() {
+
         return Item.builder()
                 .itemNm(this.itemNm)
                 .price(this.price)
@@ -57,5 +58,6 @@ public class ItemFormDto {
                 .stockNumber(this.stockNumber)
                 .itemSellStatus(this.itemSellStatus)
                 .build();
+
     }
 }

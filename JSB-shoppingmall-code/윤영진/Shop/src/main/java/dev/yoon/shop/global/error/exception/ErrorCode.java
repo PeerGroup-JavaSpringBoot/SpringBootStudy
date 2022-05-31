@@ -25,7 +25,9 @@ public enum ErrorCode {
     ORDER_NOT_EXISTS(400, "주문정보를 찾을 수 없습니다."),
 
     // 상품 이미지
-    ITEM_IMAGE_NOT_EXISTS(400, "해당 아이템의 이미지를 찾을 수 없습니다.");
+    ITEM_IMAGE_NOT_EXISTS(400, "해당 아이템의 이미지를 찾을 수 없습니다."),
+
+    NOT_AUTHENTICATION_CANCEL_ORDER(403, "주문 취소 권한이 없습니다");
 
 
 

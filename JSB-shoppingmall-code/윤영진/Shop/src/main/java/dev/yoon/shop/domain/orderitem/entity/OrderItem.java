@@ -43,4 +43,28 @@ public class OrderItem extends BaseEntity {
         this.count = count;
     }
 
+    public static OrderItem createOrderItem(Item item, int count) {
+        /**
+         * 주문 상품을 생성한다는 것은 주문 수량만큼 상품의 재고를 차감하는 것
+         */
+        item.removeStock(count);
+
+        return OrderItem.builder()
+                .orderPrice(item.getPrice())
+                .count(count)
+                .item(item)
+                .build();
+    }
+    public void updateOrder(Order orders) {
+        this.order = orders;
+    }
+
+    public int getTotalPrice() {
+        return this.getOrderPrice() * this.getCount();
+    }
+
+    public void cancel() {
+        this.getItem().addStock(count);
+    }
+
 }

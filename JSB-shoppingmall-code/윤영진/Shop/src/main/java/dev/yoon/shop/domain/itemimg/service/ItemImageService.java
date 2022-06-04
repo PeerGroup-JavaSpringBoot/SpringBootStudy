@@ -2,6 +2,7 @@ package dev.yoon.shop.domain.itemimg.service;
 
 import dev.yoon.shop.domain.item.entity.Item;
 import dev.yoon.shop.domain.itemimg.entity.ItemImage;
+import dev.yoon.shop.domain.itemimg.exception.ItemImageNotFoundException;
 import dev.yoon.shop.domain.itemimg.repository.ItemImageRepository;
 import dev.yoon.shop.infra.FileService;
 import dev.yoon.shop.infra.UploadFile;
@@ -85,5 +86,11 @@ public class ItemImageService {
         itemImage.initImageInfo();
     }
 
+    public ItemImage getItemImageByItemIdAndIsRepImg(Long itemId, boolean isRepImage) {
+
+        return itemImageRepository.findByItemIdAndIsRepImg(itemId, isRepImage)
+                .orElseThrow(()-> new ItemImageNotFoundException());
+
+    }
 
 }

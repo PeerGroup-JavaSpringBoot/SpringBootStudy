@@ -24,8 +24,10 @@ public class MemberController {
 
     @GetMapping("/new")
     public String memberForm(Model model) {
+
         model.addAttribute("memberFormDto", new MemberRegisterDto());
         return "member/memberForm";
+
     }
 
     @PostMapping("/new")

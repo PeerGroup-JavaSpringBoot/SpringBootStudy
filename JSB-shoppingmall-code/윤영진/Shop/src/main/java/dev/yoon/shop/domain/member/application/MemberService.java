@@ -48,7 +48,9 @@ public class MemberService implements UserDetailsService {
     }
 
     public Member getMemberByEmail(String email) {
+
         return memberRepository.findByEmail(Email.of(email))
                 .orElseThrow(() -> new MemberNotFoundException());
+
     }
 }

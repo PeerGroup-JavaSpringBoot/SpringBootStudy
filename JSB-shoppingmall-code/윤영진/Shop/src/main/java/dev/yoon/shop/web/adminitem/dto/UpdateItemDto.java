@@ -58,6 +58,7 @@ public class UpdateItemDto {
     }
 
     public static UpdateItemDto of(Item item, List<ItemImage> itemImages) {
+
         List<ItemImageDto> itemImageDtos = ItemImageDto.of(itemImages);
 
         UpdateItemDto updateItemDto = UpdateItemDto.builder()

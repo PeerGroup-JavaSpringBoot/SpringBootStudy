@@ -27,7 +27,6 @@ public class AdminItemService {
     private final MemberService memberService;
     private final ItemImageService itemImageService;
 
-
     @Transactional
     public Item saveItem(ItemFormDto dto, String email) throws IOException {
 

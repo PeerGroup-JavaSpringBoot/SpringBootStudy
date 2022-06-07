@@ -3,7 +3,9 @@ package dev.yoon.shop.domain.item.entity;
 import dev.yoon.shop.domain.base.BaseEntity;
 import dev.yoon.shop.domain.item.constant.ItemSellStatus;
 import dev.yoon.shop.domain.base.BaseTimeEntity;
+import dev.yoon.shop.domain.item.exception.OutOfStockException;
 import dev.yoon.shop.domain.member.entity.Member;
+import dev.yoon.shop.global.error.exception.ErrorCode;
 import lombok.*;
 
 import javax.persistence.*;
@@ -40,7 +42,6 @@ public class Item extends BaseEntity {
     @JoinColumn(name = "member_id", nullable = false)
     private Member member;
 
-
     @Builder
     public Item(Long id, String itemNm, int price, int stockNumber, String itemDetail, ItemSellStatus itemSellStatus,Member member) {
         this.id = id;
@@ -71,5 +72,22 @@ public class Item extends BaseEntity {
         this.stockNumber = updateItem.getStockNumber();
         this.itemDetail = updateItem.getItemDetail();
         this.itemSellStatus = updateItem.getItemSellStatus();
+    }
+
+    public void removeStock(int stockNumber) {
+        int restStock = this.stockNumber - stockNumber;
+
+        if (restStock < 0) {
+            throw new OutOfStockException(ErrorCode.OUT_OF_STOCK.getMessage() + String.format("(현재 재고 수량: %d)", this.stockNumber));
+        }
+        if (restStock == 0) {
+            this.itemSellStatus = ItemSellStatus.SOLD_OUT;
+        }
+        this.stockNumber = restStock;
+    }
+
+    public void addStock(int stockNumber) {
+        this.stockNumber += stockNumber;
+
     }
 }

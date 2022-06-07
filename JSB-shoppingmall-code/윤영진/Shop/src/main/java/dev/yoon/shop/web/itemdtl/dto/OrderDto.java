@@ -1,5 +1,7 @@
 package dev.yoon.shop.web.itemdtl.dto;
 
+import dev.yoon.shop.domain.cartitem.entity.CartItem;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +11,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
+@Builder
 public class OrderDto {
 
     @NotNull(message = "상품 아이디는 필수 입력 값입니다.")
@@ -19,4 +22,12 @@ public class OrderDto {
     private int count;
 
 
+    public static OrderDto of(CartItem cartItem) {
+
+        return OrderDto.builder()
+                .ItemId(cartItem.getItem().getId())
+                .count(cartItem.getCount())
+                .build();
+
+    }
 }

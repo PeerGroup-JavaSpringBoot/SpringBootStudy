@@ -1,6 +1,7 @@
 package dev.yoon.shop.web.itemdtl.controller;
 
 import dev.yoon.shop.global.config.security.UserDetailsImpl;
+import dev.yoon.shop.web.itemdtl.dto.CartItemDto;
 import dev.yoon.shop.web.itemdtl.dto.ItemDtlDto;
 import dev.yoon.shop.web.itemdtl.dto.OrderDto;
 import dev.yoon.shop.web.itemdtl.service.ItemDtlService;
@@ -66,6 +67,31 @@ public class ItemDtlController {
         }
 
         return ResponseEntity.ok("order success");
+    }
+
+    @PostMapping("/cart")
+    public ResponseEntity cartOrder(
+            @Valid @RequestBody CartItemDto cartItemDto,
+            BindingResult bindingResult,
+            @AuthenticationPrincipal UserDetailsImpl userDetails) {
+
+        if (bindingResult.hasErrors()) {
+            StringBuilder sb = new StringBuilder();
+            List<FieldError> fieldErrors = bindingResult.getFieldErrors();
+            for (FieldError fieldError : fieldErrors) {
+                sb.append(fieldError.getDefaultMessage());
+            }
+            return new ResponseEntity<String>(sb.toString(), HttpStatus.BAD_REQUEST);
+        }
+        String email = userDetails.getUsername();
+        Long cartItemId;
+        try {
+            cartItemId = itemDtlService.cartOrder(cartItemDto, email);
+        }catch (Exception e) {
+            return new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+
+        return ResponseEntity.ok(cartItemId);
     }
 
 
